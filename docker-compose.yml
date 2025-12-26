@@ -1,0 +1,14 @@
+services:
+  nextjs-app:
+    build: .
+    container_name: cv-portfolio
+    restart: unless-stopped
+    ports:
+      - "3000:3000"
+    networks:
+      - nginx-proxy-manager_default
+
+networks:
+  nginx-proxy-manager_default:
+    external: true
+    name: nginx-proxy-manager_default

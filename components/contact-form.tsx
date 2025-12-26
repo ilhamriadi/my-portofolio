@@ -91,7 +91,7 @@ export function ContactForm() {
                 <FormControl>
                   <Input
                     type="email"
-                    placeholder="your.email@example.com"
+                    placeholder="email@ilham.co.id"
                     className="bg-zinc-800/50 border-zinc-700 focus:border-cyan-500"
                     {...field}
                   />
