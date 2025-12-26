@@ -6,9 +6,9 @@ services:
     ports:
       - "3000:3000"
     networks:
-      - nginx-proxy-manager_default
+      - npm-network
 
 networks:
-  nginx-proxy-manager_default:
+  npm-network:
     external: true
-    name: nginx-proxy-manager_default
+    name: npm-network
